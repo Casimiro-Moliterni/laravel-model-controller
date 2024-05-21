@@ -1,7 +1,21 @@
 @import '~bootstrap/scss/bootstrap';
 @import './partials/home';
+@import './partials/header';
 
 .ms_container{
     width: 80%;
     margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    background-color: #001428;
 }
