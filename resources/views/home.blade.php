@@ -7,7 +7,36 @@
                 @foreach ($movies as $single_movie)
                     <div class="col">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            @if ($single_movie->id == 1)
+                            <img src="{{ Vite::asset('resources/img/padrino.jpe') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 2)
+                            <img src="{{ Vite::asset('resources/img/via-col-vento.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 3)
+                            <img src="{{ Vite::asset('resources/img/psycho.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 4)
+                            <img src="{{ Vite::asset('resources/img/gravity.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 5)
+                            <img src="{{ Vite::asset('resources/img/toy-story-jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 6)
+                            <img src="{{ Vite::asset('resources/img/pulp-fiction.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 7)
+                            <img src="{{ Vite::asset('resources/img/forrest-gump.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 8)
+                            <img src="{{ Vite::asset('resources/img/guerre-stellari.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 9)
+                            <img src="{{ Vite::asset('resources/img/et.jpg') }}" class="card-img-top" alt="...">
+                            @endif
+                            @if ($single_movie->id == 10)
+                            <img src="{{ Vite::asset('resources/img/il-silenzio-degli-innocenti.jpg') }}" class="card-img-top" alt="...">
+                            @endif
                             <div class="card-body text-center">
                                 <div>Titolo:
                                     <h5>{{ $single_movie->title }}</h5>

@@ -7,6 +7,7 @@ class PageController extends Controller
 {
     public function index(){
        $movies=Movie::all();
+    //    dd($movies[0]);
        $data = [
         'movies' => $movies
     ];
